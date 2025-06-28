@@ -17,6 +17,9 @@
             <a href="/de/categories">Categories</a>
         </li>
         <li>
+            <a href="/de/category/action-dvd.html">Categories</a>
+        </li>
+        <li>
             <a href="/de/brand/test-123">Brand</a>
         </li>                
     </ul>    
