@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="mx-auto max-w-6xl px-3 py-3">
+    <section class="mx-auto max-w-6xl px-3 lg:px-0 py-3">
       <div class="bg-gray-400 flex justify-between">
         <section class="logo px-3 py-3">
           <a href="/" class="flex items-center">
@@ -19,7 +19,7 @@
           </button>
         </nav>
         <nav class="content hidden md:block">
-          <ul class="flex flex-col md:flex-row space-x-5 mt-5">
+          <ul class="flex flex-col md:flex-row space-x-5 mt-5 mr-3">
             <li>
               <a href="/" class="btn btn-sm btn-primary btn-block"
                 >Startseite</a
