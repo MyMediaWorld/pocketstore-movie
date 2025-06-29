@@ -6,6 +6,7 @@
   "checkout.cart.empty": "Warenkorb leer",
   "checkout.cart.headline": "Warenkorb",
   "checkout.checkout": "Kasse",
+  "product.stock.warning": "Das Produkt ist nicht auf Lager",
   "checkout.currency.dollar": "$",
   "checkout.currency.euro": "€",
   "checkout.customer": "Kunde",
