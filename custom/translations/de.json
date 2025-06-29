@@ -1,1 +1,234 @@
-[]
+[
+  {
+    "id": "u0ys1bto1j9swt2",
+    "key": "checkout.add-to-cart",
+    "translated": "Jetzt kaufen",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "t4erb69efei6w06",
+    "key": "form.login-via",
+    "translated": "Login via",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "mm99kxw6d0p23ly",
+    "key": "payment.methods.vorkasse",
+    "translated": "Vorkasse",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "hs5cxnw7qn32noo",
+    "key": "company.github",
+    "translated": "Github",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "6mdr6cpptgp04u7",
+    "key": "footer.data-privacy",
+    "translated": "Datenschutz",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "r0igdum8xrg5zfx",
+    "key": "footer.impressum",
+    "translated": "Impressum",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "4crodxtsmhfescn",
+    "key": "lang.de",
+    "translated": "Deutsch",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "9x3w8ttdw7ntqbp",
+    "key": "breadcrumb.home",
+    "translated": "Startseite",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "qyxx98rvj1zf3vb",
+    "key": "checkout.cart.empty",
+    "translated": "Warenkorb leer",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "boa3hi5clrze43j",
+    "key": "checkout.checkout",
+    "translated": "Kasse",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "97w8sc68stet7o2",
+    "key": "shipping.methods.dhl",
+    "translated": "DHL",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "7i0nuoglvo5jirv",
+    "key": "checkout.currency.dollar",
+    "translated": "$",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "ywhxmfb54n98vnn",
+    "key": "product.label.format",
+    "translated": "Format",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "vh9w57wa434k2h8",
+    "key": "checkout.customer",
+    "translated": "Kunde",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "50yek08ekyl37ce",
+    "key": "company.google",
+    "translated": "Google",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "p5jskoykhr4zkn3",
+    "key": "general.note",
+    "translated": "Dies ist ein Demo Store von PocketStore.io",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "d152tnjmdgyvihq",
+    "key": "catalog.category",
+    "translated": "Kategorie",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "eid3v0i99c1ezg3",
+    "key": "checkout.addresses",
+    "translated": "Adressen",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "tyv31ju69b2w4m2",
+    "key": "checkout.cart.headline",
+    "translated": "Warenkorb",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "cu2i9ylternptze",
+    "key": "form.form",
+    "translated": "Formular",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "q7bjw5u9vqb6c96",
+    "key": "country.de",
+    "translated": "Deutschland",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "opkec0cmra2wchx",
+    "key": "general.title",
+    "translated": "Demo - My-Media.world",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "g6z6y8i61e0xxb6",
+    "key": "lang.en",
+    "translated": "Englisch",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "jg3yct51n7gnhxr",
+    "key": "checkout.currency.euro",
+    "translated": "€",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "6whgopjslbtwuah",
+    "key": "checkout.payment-and-shipping",
+    "translated": "Bezahlung und Versand",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "n0zn71l6c3566bb",
+    "key": "footer.made-with",
+    "translated": "Gemacht mit",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "bc1fhmuqmlg7klc",
+    "key": "form.or",
+    "translated": "oder",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "pa21ry1ev04ae1u",
+    "key": "product.label.farbe",
+    "translated": "Farbe",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "yg4n9vfty26dv67",
+    "key": "checkout.label.store",
+    "translated": "Geschäft",
+    "lang": "de",
+    "type": "words",
+    "collection": ""
+  }
+]

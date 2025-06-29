@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": "4rxxp8k6qnj7tye",
+    "key": "footer.data-privacy",
+    "translated": "Data Privacy",
+    "lang": "en",
+    "type": "words",
+    "collection": ""
+  },
+  {
+    "id": "w5a5b544vxv3iyw",
+    "key": "footer.made-with",
+    "translated": "Made with",
+    "lang": "en",
+    "type": "words",
+    "collection": ""
+  }
+]
