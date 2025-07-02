@@ -18,7 +18,7 @@
       </a>
     </figure>
     <p class="text-sm font-bold text-center block py-2 px-2">
-      Media by <a href="https://www.themoviedb.org" class="text-blue-500">themoviedb.org</a>
+      Media by <a href="https://www.themoviedb.org" class="text-blue-500" target="_blank">themoviedb.org</a>
     </p>
     <div class="card-body">
       <h2 class="card-title text-ellipsis line-clamp-1">{{ product.name }}</h2>
