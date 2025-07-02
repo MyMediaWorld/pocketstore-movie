@@ -10,6 +10,13 @@
 import config from "./../pocketstore.json";
 const { t } = useI18n();
 useHead({
-    title: t("general.title"),
+  title: t("general.title"),
+  meta: [
+    {
+      name: "Media Store by JMSE - My-Media.world",
+      content:
+        "My Media World, ist meine Welt der Medien gefüttert von TMDB mit Film Daten soll es erstmal zeigen was mit PocketStore.io möglich ist by JMSE.",
+    },
+  ],
 });
 </script>
