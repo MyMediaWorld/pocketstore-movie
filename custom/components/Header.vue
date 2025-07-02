@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="mx-auto max-w-6xl px-3 lg:px-0 py-3">
+    <section class="mx-auto max-w-6xl px-3 2xl:px-0 py-3">
       <div class="bg-gray-400 flex justify-between">
         <section class="logo px-3 py-3">
           <a href="/" class="flex items-center">
