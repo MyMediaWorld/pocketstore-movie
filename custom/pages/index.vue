@@ -7,8 +7,8 @@
 </template>
 
 <script setup lang="ts">
-import config from "./../pocketstore.json";
 const { t } = useI18n();
+
 useHead({
   title: t("general.title"),
   meta: [
