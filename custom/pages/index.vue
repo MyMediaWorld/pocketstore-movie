@@ -10,10 +10,10 @@
 const { t } = useI18n();
 
 useHead({
-  title: t("general.title"),
+  title: 'Media Store by JMSE - My-Media.world',
   meta: [
     {
-      name: "Media Store by JMSE - My-Media.world",
+      name: "description",
       content:
         "My Media World, ist meine Welt der Medien gefüttert von TMDB mit Film Daten soll es erstmal zeigen was mit PocketStore.io möglich ist by JMSE.",
     },
