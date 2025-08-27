@@ -1,7 +1,7 @@
 <template>
-  <div v-for="product in products" :key="product.id" class="col-span-6 md:col-span-2 py-3">
-    <CatalogProductCard :identifier="product.slug" />
-  </div>
+  <template v-for="product in products" :key="product.id">
+    <CatalogProductCard v-if="product.cover" :identifier="product.slug" />
+  </template>
 </template>
 
 <script setup>
@@ -21,7 +21,7 @@ onMounted(async () => {
         .getFirstListItem('slug="' + identifier + '"');
     products.value = (
         await pb.collection("products").getList(1, 12, {
-            filter: 'category="' + category.value.id + '"',
+            filter: 'category="' + category.value.id + '" && cover!=""',
             sort: '-created'
         })
     ).items;

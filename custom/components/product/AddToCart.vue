@@ -1,24 +1,22 @@
 <template>
   <div>
     <button
-    v-if="!(new Date(props.item.release_date) < new Date())"
-    class="btn btn-secondary rounded-r-lg"
-    :disabled="
-      props.qty < 1 ||
-      stock.length == 0
-    "
-    @click="addToCart(props.item.id)"
-  >
-    {{ $t("checkout.add-to-cart") }}
-  </button>
-    <button v-else 
-    class="btn btn-warning rounded-r-lg">{{ $t("checkout.disabled-add-to-cart") }}</button>
-    </div>
+        v-if="!(new Date(props.item.release_date) < new Date()) && props.stock > 0"
+        class="btn btn-secondary rounded-r-lg"
+        @click="addToCart(props.item.id)"
+    >
+      {{ $t("checkout.add-to-cart") }}
+    </button>
+    <button v-else-if="props.stock <1" class="btn btn-secondary">Out of Stock</button>
+    <button v-else
+            class="btn btn-warning rounded-r-lg">{{ $t("checkout.disabled-add-to-cart") }}
+    </button>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { useLocalStorage } from "@vueuse/core";
-import { usePocketBase } from "~/util/pocketbase";
+import {useLocalStorage} from "@vueuse/core";
+import {usePocketBase} from "~/util/pocketbase";
 
 const props = defineProps({
   item: {
@@ -27,12 +25,8 @@ const props = defineProps({
   },
   stock: {
     required: true,
-    type: Object,
-  },
-  qty: {
-    required: true,
     type: Number,
-  },
+  }
 });
 
 const qty = ref(1);
