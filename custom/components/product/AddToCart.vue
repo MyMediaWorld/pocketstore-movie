@@ -7,7 +7,7 @@
     >
       {{ $t("checkout.add-to-cart") }}
     </button>
-    <button v-else-if="props.stock <1" class="btn btn-secondary">Out of Stock</button>
+    <button v-else-if="props.stock <1" class="btn btn-error rounded-r-lg text-white">Out of Stock</button>
     <button v-else
             class="btn btn-warning rounded-r-lg">{{ $t("checkout.disabled-add-to-cart") }}
     </button>
