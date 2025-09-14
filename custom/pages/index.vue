@@ -10,7 +10,7 @@
 useHead({
   title: 'Media Store by JMSE - My-Media.world',
   meta: [
-    {name:'keywords',content: 'gummersbach,bergneustadt,my,media,world,my-media.world,my-media,my Media,filme,serien,kinofilme'},
+    {name:'keywords',content: 'jmse,media store,store,movies,gummersbach,bergneustadt,my,media,world,my-media.world,my-media,my media,filme,serien,kinofilme'},
     {
       name: "description",
       content:
