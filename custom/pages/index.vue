@@ -7,11 +7,10 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n();
-
 useHead({
   title: 'Media Store by JMSE - My-Media.world',
   meta: [
+    {name:'keywords',content: 'gummersbach,bergneustadt,my,media,world,my-media.world,my-media,my Media,filme,serien,kinofilme'},
     {
       name: "description",
       content:
