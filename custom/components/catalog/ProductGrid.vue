@@ -22,7 +22,7 @@ onMounted(async () => {
     products.value = (
         await pb.collection("products").getList(1, 12, {
             filter: 'category="' + category.value.id + '" && cover!=""',
-            sort: '-created'
+            sort: 'updated'
         })
     ).items;
 });
