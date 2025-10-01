@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import { usePocketBase } from "~/util/pocketbase";
 import { defineProps ,onUpdated,onMounted} from "vue";
-import {Head} from "@vueuse/head";
-import {useHead} from "../../../storefront/.nuxt/imports";
 
 const props = defineProps({
     product: { type: Object, required: true },
