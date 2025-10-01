@@ -12,8 +12,6 @@
 </template>
 
 <script setup lang="ts">
-import {nextTick} from "../../storefront/.nuxt/imports";
-
 useHead({
   title: 'Media Store by JMSE - My-Media.world',
   meta: [
