@@ -5,15 +5,14 @@
         <a :href="'/' + locale + '/product/' + product.slug + '.html'">
           <img v-if="product.cover"
                :src="
-            'https://' +
-            config.domain +
-            '/api/files/' +
-            product.collectionId +
-            '/' +
-            product.id +
-            '/' +
-            product.cover
-          "
+                  url +
+                  '/api/files/' +
+                  product.collectionId +
+                  '/' +
+                  product.id +
+                  '/' +
+                  product.cover
+                "
                alt="Shoes"
           />
         </a>
@@ -40,11 +39,11 @@
 </template>
 
 <script lang="ts" setup>
-import {usePocketBase} from "~/util/pocketbase";
-import config from "@/pocketstore.json";
+import {usePocketBase, usePocketBaseUrl} from "~/util/pocketbase";
 import {useLocalStorage} from "@vueuse/core";
 
 const pb = usePocketBase();
+const url = usePocketBaseUrl();
 
 const i18n = useI18n();
 const locale = i18n.locale;
