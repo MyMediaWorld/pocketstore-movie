@@ -62,6 +62,7 @@
 <script lang="ts" setup>
 import { usePocketBase, usePocketBaseUrl } from "~/util/pocketbase";
 import ReviewStars from "@/components/product/ReviewStars.vue";
+import { useHead } from '@unhead/vue'
 
 const route = useRoute();
 const pb = usePocketBase();
@@ -74,6 +75,16 @@ const load = async () => {
   item.value = await pb
     .collection("products")
     .getFirstListItem('slug="' + route.params.slug.replace(".html", "") + '"');
+
+  useHead({
+    title: item.value.name + ' - Produkt Ansicht',
+    meta: [
+      {
+        name: "description",
+        content: item.value.description,
+      },
+    ],
+  });
 
   stock.value = (
     await pb.collection("product_stocks").getList(1, 1, {
