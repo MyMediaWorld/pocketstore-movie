@@ -1,7 +1,7 @@
 {
   "domains": {
-    "nuxt": "my-media.world",
-    "pocketbase": "admin.my-media.world"
+    "nuxt": "demo.pocketstore.io",
+    "pocketbase": "admin.pocketstore.io"
   },
   "maintance": {
     "enabled": false,
@@ -15,11 +15,7 @@
   },
   "language": {
     "fallback": "de",
-    "languages": [
-      "en",
-      "de",
-      "fr"
-    ],
+    "languages": ["en", "de", "fr"],
     "locales": [
       {
         "code": "de",
@@ -33,10 +29,7 @@
   },
   "currency": {
     "fallback": "€",
-    "currencies": [
-      "€",
-      "$"
-    ]
+    "currencies": ["€", "$"]
   },
   "integrations": {
     "cookiefirst": {

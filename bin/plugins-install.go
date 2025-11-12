@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"log"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -52,55 +51,65 @@ func DownloadFile(filepathDest string, url string) error {
 
 // Unzip extracts a zip archive to a specified destination
 func Unzip(src, dest string) error {
-	fmt.Printf("[debug] Unzip called: src=%s dest=%s\n", src, dest)
 	r, err := zip.OpenReader(src)
 	if err != nil {
-		fmt.Printf("[error] zip.OpenReader failed for %s: %v\n", src, err)
 		return err
 	}
 	defer r.Close()
 
-	for _, f := range r.File {
-		fpath := filepath.Join(dest, f.Name)
-		fmt.Printf("[debug] extracting zip entry: %s -> %s\n", f.Name, fpath)
+	// Find common prefix (strip top-level directory from GitHub zips)
+	var prefix string
+	if len(r.File) > 0 {
+		firstPath := r.File[0].Name
+		if strings.Contains(firstPath, "/") {
+			prefix = strings.Split(firstPath, "/")[0] + "/"
+		}
+	}
 
+	for _, f := range r.File {
+		// Strip the prefix from the path
+		relativePath := f.Name
+		if prefix != "" && strings.HasPrefix(f.Name, prefix) {
+			relativePath = strings.TrimPrefix(f.Name, prefix)
+		}
+
+		// Skip if we've stripped everything (root directory itself)
+		if relativePath == "" {
+			continue
+		}
+
+		fpath := filepath.Join(dest, relativePath)
 		if f.FileInfo().IsDir() {
 			if err := os.MkdirAll(fpath, os.ModePerm); err != nil {
-				fmt.Printf("[error] mkdir %s failed: %v\n", fpath, err)
 				return err
 			}
 			continue
 		}
 
 		if err := os.MkdirAll(filepath.Dir(fpath), os.ModePerm); err != nil {
-			fmt.Printf("[error] mkdirall %s failed: %v\n", filepath.Dir(fpath), err)
 			return err
 		}
 
 		outFile, err := os.OpenFile(fpath, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, f.Mode())
 		if err != nil {
-			fmt.Printf("[error] openfile %s failed: %v\n", fpath, err)
 			return err
 		}
 
 		rc, err := f.Open()
 		if err != nil {
 			outFile.Close()
-			fmt.Printf("[error] f.Open for %s failed: %v\n", f.Name, err)
 			return err
 		}
 
-		written, err := io.Copy(outFile, rc)
+		_, err = io.Copy(outFile, rc)
+
 		outFile.Close()
 		rc.Close()
 
 		if err != nil {
-			fmt.Printf("[error] copy to %s failed: %v\n", fpath, err)
 			return err
 		}
-		fmt.Printf("[debug] wrote %d bytes to %s\n", written, fpath)
 	}
-	fmt.Printf("[debug] Unzip completed for %s\n", src)
 	return nil
 }
 
@@ -182,12 +191,15 @@ func main() {
 
 		url := fmt.Sprintf("https://download.pocketstore.io/d/plugins/%s/%s/%s.zip", plugin.Vendor, plugin.Name, pluginVersion)
 		zipPath := filepath.Join(cacheDir, fmt.Sprintf("%s-%s-%s.zip", plugin.Vendor, plugin.Name, pluginVersion))
-		destDir := filepath.Join(".plugins", "repos")
 
-		fmt.Printf("[debug] ensure cache dir (again) %s\n", cacheDir)
-		err := os.MkdirAll(cacheDir, 0755)
-		if err != nil {
-			log.Fatalf("[error] MkdirAll failed: %v", err)
+		// Ensure each plugin is extracted into its own directory under .plugins/repos/<vendor>/<name>
+		destDir := filepath.Join(".plugins", "repos", plugin.Vendor, plugin.Name)
+		fmt.Printf("[debug] plugin destination dir: %s\n", destDir)
+
+		// Remove any existing contents in the plugin destDir so old files do not persist
+		if err := os.RemoveAll(destDir); err != nil {
+			// Non-fatal: warn and continue
+			fmt.Printf("[warn] failed to remove existing dest dir %s: %v\n", destDir, err)
 		}
 
 		fmt.Printf("[info] Downloading %s...\n", url)
@@ -205,6 +217,6 @@ func main() {
 			os.Exit(12)
 		}
 
-		fmt.Printf("[info] Installed %s/%s %s\n", plugin.Vendor, plugin.Name, pluginVersion)
+		fmt.Printf("[info] Installed %s/%s %s into %s\n", plugin.Vendor, plugin.Name, pluginVersion, destDir)
 	}
 }
