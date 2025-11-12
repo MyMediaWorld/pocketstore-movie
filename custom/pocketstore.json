@@ -1,7 +1,7 @@
 {
   "domains": {
-    "nuxt": "demo.pocketstore.io",
-    "pocketbase": "admin.pocketstore.io"
+    "nuxt": "www.my-media.world",
+    "pocketbase": "admin.my-media.world"
   },
   "maintance": {
     "enabled": false,
