@@ -1,6 +1,11 @@
 [
   {
     "version": "latest",
+    "name": "homepage",
+    "vendor": "MyMediaWorld"
+  },
+  {
+    "version": "latest",
     "name": "breadcrumb",
     "vendor": "pocketstore-io"
   },
