@@ -8,5 +8,10 @@
     "name": "image-slider",
     "vendor": "pocketstore-io",
     "version": "latest"
+  },
+  {
+    "name": "simple-blog",
+    "vendor": "pocketstore-io",
+    "version": "latest"
   }
 ]

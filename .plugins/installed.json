@@ -53,5 +53,10 @@
     "version": "latest",
     "name": "impressum-demo",
     "vendor": "pocketstore-io"
+  },
+  {
+    "version": "latest",
+    "name": "simple-blog",
+    "vendor": "pocketstore-io"
   }
 ]
