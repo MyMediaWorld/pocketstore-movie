@@ -3,5 +3,10 @@
     "name": "homepage",
     "vendor": "MyMediaWorld",
     "version": "latest"
+  },
+  {
+    "name": "image-slider",
+    "vendor": "pocketstore-io",
+    "version": "latest"
   }
 ]
