@@ -1,8 +1,13 @@
 [
   {
     "version": "latest",
-    "name": "homepage",
-    "vendor": "MyMediaWorld"
+    "name": "admin-dashboard",
+    "vendor": "pocketstore-io"
+  },
+  {
+    "version": "latest",
+    "name": "backtotop",
+    "vendor": "pocketstore-io"
   },
   {
     "version": "latest",
@@ -56,7 +61,22 @@
   },
   {
     "version": "latest",
-    "name": "simple-blog",
+    "name": "live-chat",
+    "vendor": "pocketstore-io"
+  },
+  {
+    "version": "latest",
+    "name": "product-details",
+    "vendor": "pocketstore-io"
+  },
+  {
+    "version": "latest",
+    "name": "product-tabs",
+    "vendor": "pocketstore-io"
+  },
+  {
+    "version": "latest",
+    "name": "toasts",
     "vendor": "pocketstore-io"
   }
 ]
