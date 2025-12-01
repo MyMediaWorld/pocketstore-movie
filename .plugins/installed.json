@@ -1,6 +1,11 @@
 [
   {
     "version": "latest",
+    "name": "homepage",
+    "vendor": "MyMediaWorld"
+  },
+  {
+    "version": "latest",
     "name": "admin-dashboard",
     "vendor": "pocketstore-io"
   },
@@ -72,6 +77,11 @@
   {
     "version": "latest",
     "name": "product-tabs",
+    "vendor": "pocketstore-io"
+  },
+  {
+    "version": "latest",
+    "name": "simple-blog",
     "vendor": "pocketstore-io"
   },
   {
