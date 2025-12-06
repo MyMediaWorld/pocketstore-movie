@@ -1,17 +1,7 @@
 [
   {
     "version": "latest",
-    "name": "disclaimer-demo",
-    "vendor": "pocketstore-io"
-  },
-  {
-    "version": "latest",
     "name": "impressum-demo",
-    "vendor": "pocketstore-io"
-  },
-  {
-    "version": "latest",
-    "name": "homepage-demo",
     "vendor": "pocketstore-io"
   },
   {
@@ -31,7 +21,32 @@
   },
   {
     "version": "latest",
+    "name": "homepage",
+    "vendor": "MyMediaWorld"
+  },
+  {
+    "version": "latest",
+    "name": "simple-blog",
+    "vendor": "pocketstore-io"
+  },
+  {
+    "version": "latest",
+    "name": "product-reviews",
+    "vendor": "pocketstore-io"
+  },
+  {
+    "version": "latest",
     "name": "admin-dashboard",
+    "vendor": "pocketstore-io"
+  },
+  {
+    "version": "latest",
+    "name": "disclaimer-demo",
+    "vendor": "pocketstore-io"
+  },
+  {
+    "version": "latest",
+    "name": "homepage-demo",
     "vendor": "pocketstore-io"
   },
   {
@@ -81,17 +96,17 @@
   },
   {
     "version": "latest",
-    "name": "product-details",
-    "vendor": "pocketstore-io"
-  },
-  {
-    "version": "latest",
     "name": "image-slider",
     "vendor": "pocketstore-io"
   },
   {
     "version": "latest",
-    "name": "product-reviews",
+    "name": "product-details",
+    "vendor": "pocketstore-io"
+  },
+  {
+    "version": "latest",
+    "name": "plugins-image-slider",
     "vendor": "pocketstore-io"
   }
 ]
