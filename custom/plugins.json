@@ -1,12 +1,27 @@
 [
   {
-    "name": "homepage",
-    "vendor": "MyMediaWorld",
+    "name": "impressum-demo",
+    "vendor": "pocketstore-io",
     "version": "latest"
   },
   {
-    "name": "image-slider",
+    "name": "issue-reporting",
     "vendor": "pocketstore-io",
+    "version": "latest"
+  },
+  {
+    "name": "bug-reporting",
+    "vendor": "pocketstore-io",
+    "version": "latest"
+  },
+  {
+    "name": "hello-world",
+    "vendor": "pocketstore-io",
+    "version": "latest"
+  },
+  {
+    "name": "homepage",
+    "vendor": "MyMediaWorld",
     "version": "latest"
   },
   {
