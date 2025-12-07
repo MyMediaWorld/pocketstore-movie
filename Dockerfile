@@ -8,7 +8,6 @@ WORKDIR /var/www/demo
 RUN go run bin/update.go
 RUN go run bin/custom.go
 RUN go run bin/plugins.go
-RUN go run bin/requirements.go
 RUN go run bin/translations.go
 
 WORKDIR /var/www/demo/storefront
@@ -19,8 +18,9 @@ RUN go run bin/sitemap.go
 
 # Install project dependencies
 RUN bun install
+RUN bun run build
 
 # Expose the desired port
 EXPOSE 3000
 
-CMD ["nuxi", "preview"]
+CMD ["bun", "x","nuxi", "preview"]
